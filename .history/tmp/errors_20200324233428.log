@@ -1,0 +1,134 @@
+[2017-08-20 16:04:59] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:05:11] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:05:16] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:05:25] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:05:37] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:05:46] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:07:33] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:08:53] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:09:00] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:09:04] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:10:32] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:10:37] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-20 16:10:48] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-21 10:41:17] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-21 10:41:17] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-21 10:41:17] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-21 10:46:30] Текст ошибки: Страница не найдена!!! | Файл: D:\WebServer\domains\ishop2.loc\public\index.php | Строка: 8
+=================
+[2017-08-21 11:16:05] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 26
+=================
+[2017-08-21 11:16:31] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 26
+=================
+[2017-08-21 11:16:34] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 26
+=================
+[2017-08-21 11:30:20] Текст ошибки: Контроллер app\controllers\PageController не найден | Файл: D:\WebServer\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 30
+=================
+[2017-08-21 11:32:18] Текст ошибки: Контроллер app\controllers\PageController не найден | Файл: D:\WebServer\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 34
+=================
+[2017-08-21 11:32:20] Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: D:\WebServer\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 34
+=================
+[2017-08-21 11:32:45] Текст ошибки: Метод app\controllers\MainController::indexAction не найден | Файл: D:\WebServer\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 31
+=================
+[2017-08-21 11:33:21] Текст ошибки: Контроллер app\controllers\PageController не найден | Файл: D:\WebServer\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 34
+=================
+[2017-08-21 11:34:13] Текст ошибки: Страница не найдена | Файл: D:\WebServer\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 37
+=================
+[2020-02-24 16:13:54] Текст ошибки: Страница не найдена | Файл: E:\Software\XAMPP\htdocs\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=================
+[2020-02-24 16:33:45] Текст ошибки: Страница не найдена | Файл: E:\Software\XAMPP\htdocs\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=================
+[2020-02-26 16:22:58] Текст ошибки: Class 'ishop\base\View' not found | Файл: E:\Software\XAMPP\htdocs\ishop2.loc\vendor\ishop\core\base\Controller.php | Строка: 33
+=================
+[2020-02-26 18:26:05] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 47
+=================
+[2020-03-03 14:04:34] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 47
+=================
+[2020-03-03 14:13:52] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 47
+=================
+[2020-03-03 14:51:33] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 47
+=================
+[2020-03-03 14:59:40] Текст ошибки: Call to undefined method app\controllers\MainController::setMeta() | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\app\controllers\MainController.php | Строка: 12
+=================
+[2020-03-03 15:00:43] Текст ошибки: Call to undefined method app\controllers\MainController::seData() | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\app\controllers\MainController.php | Строка: 12
+=================
+[2020-03-03 15:02:19] Текст ошибки: Class 'app\controllers\App' not found | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\app\controllers\MainController.php | Строка: 12
+=================
+[2020-03-03 15:02:46] Текст ошибки: Class 'app\controllers\App' not found | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\app\controllers\MainController.php | Строка: 12
+=================
+[2020-03-03 15:09:08] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 47
+=================
+[2020-03-03 19:55:45] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 47
+=================
+[2020-03-04 19:19:27] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 47
+=================
+[2020-03-04 19:19:40] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 47
+=================
+[2020-03-04 19:41:29] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 49
+=================
+[2020-03-04 19:42:01] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 51
+=================
+[2020-03-04 19:42:20] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 51
+=================
+[2020-03-04 19:42:23] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 51
+=================
+[2020-03-04 19:47:14] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 51
+=================
+[2020-03-04 19:47:39] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=================
+[2020-03-04 19:49:11] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=================
+[2020-03-04 19:49:41] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=================
+[2020-03-04 19:50:09] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=================
+[2020-03-04 19:50:30] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=================
+[2020-03-04 19:51:24] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 45
+=================
+[2020-03-04 19:53:51] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 44
+=================
+[2020-03-04 19:55:06] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 44
+=================
+[2020-03-05 10:40:09] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 44
+=================
+[2020-03-05 10:40:09] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 50
+=================
+[2020-03-05 10:40:10] Текст ошибки: Метод app\controllers\PageController::veiwAction не найден | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\ishop\core\Router.php | Строка: 44
+=================
+[2020-03-24 19:42:45] Текст ошибки: Class 'ishop\base\Controller' not found | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\app\controllers\AppController.php | Строка: 7
+=================
+[2020-03-24 20:04:24] Текст ошибки: Too few arguments to function app\models\AppModel::__construct(), 0 passed in E:\Software\OpenServer\OSPanel\domains\ishop2.loc\app\controllers\AppController.php on line 13 and exactly 1 expected | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\app\models\AppModel.php | Строка: 10
+=================
+[2020-03-24 20:04:37] Текст ошибки: Class 'amir\base\Db' not found | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\amir\core\base\Model.php | Строка: 14
+=================
+[2020-03-24 20:06:45] Текст ошибки: Class 'amir\base\Db' not found | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\amir\core\base\Model.php | Строка: 14
+=================
+[2020-03-24 20:33:41] Текст ошибки: syntax error, unexpected ''id = ?'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\app\controllers\MainController.php | Строка: 13
+=================
+[2020-03-24 20:33:48] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'amir_shop.user' doesn't exist | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-03-24 20:33:56] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'amir_shop.user' doesn't exist | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-03-24 20:34:04] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'amir_shop.user' doesn't exist | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-03-24 20:34:04] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\amir\core\Router.php | Строка: 50
+=================
+[2020-03-24 20:34:29] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'amir_shop.user' doesn't exist | Файл: E:\Software\OpenServer\OSPanel\domains\ishop2.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================

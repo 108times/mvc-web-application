@@ -1,0 +1,9 @@
+{
+  "autoload": {
+    "psr-4": {
+      "ishop\\": "vendor/amir/core",
+      "app\\": "app"
+    }
+  },
+  "require": {}
+}

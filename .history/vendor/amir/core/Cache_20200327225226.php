@@ -1,0 +1,32 @@
+<?php
+
+namespace amir;
+
+class Cache
+{
+
+use TSingletone;
+
+public function set($key, $data, $seconds = 3600)
+{
+
+if ($seconds) {
+    $content['data'] = $data;
+    $contnet['end_time'] = time() + $seconds;
+    if(file_put_contents( CACHE . "/" . md5($key) . '.txt', serialize($content) )) {
+
+    }
+}
+
+}
+
+public function get()
+{
+
+}
+
+public function delete()
+{
+
+}
+}
