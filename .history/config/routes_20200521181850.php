@@ -12,9 +12,8 @@ use amir\Router;
 
 /*
 
-Router::add(
-    1 argument - regular expression,
-    2 argument - action for regular expression)
+Router::add(1 argument - regular expression, 2 argument - action for regular expression)
+
  */
 
 Router::add('^admin$', ['controller' => 'Main', 'action' => 'index', 'prefix' => 'admin']);

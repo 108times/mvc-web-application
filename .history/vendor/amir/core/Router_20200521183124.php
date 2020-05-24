@@ -29,8 +29,7 @@ class Router{
     ## Маршрутизация
 
     /*
-        if route exists calls controller
-        else calls 404
+
      */
     public static function dispatch($url)
     {

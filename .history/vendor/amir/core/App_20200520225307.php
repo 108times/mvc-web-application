@@ -12,13 +12,13 @@ class App{
 
         session_start();
 
-        self::$app = Registry::instance(); ## initializing registry
+        self::$app = Registry::instance();
 
-        $this->getParams(); ## getting app params
+        $this->getParams();
 
-        new ErrorHandler(); ## initializing ErrorHandler
+        new ErrorHandler();
 
-        Router::dispatch($query); ## start routing
+        Router::dispatch($query);
 
     }
 
@@ -26,7 +26,7 @@ class App{
 
         $params = require_once CONF . '/params.php';
 
-        if( !empty($params) ){
+        if(!empty($params)){
 
             foreach($params as $k => $v){
 

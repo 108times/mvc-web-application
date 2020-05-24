@@ -27,11 +27,6 @@ class Router{
     }
 
     ## Маршрутизация
-
-    /*
-        if route exists calls controller
-        else calls 404
-     */
     public static function dispatch($url)
     {
 
@@ -65,10 +60,7 @@ class Router{
     }
 
 
-    /*
-        Searching for routes
-        true | false
-    */
+
     public static function matchRoute($url)
     {
 
