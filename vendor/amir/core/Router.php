@@ -7,13 +7,11 @@ class Router{
     protected static $routes = [];  // all routes array
     protected static $route = [];  // current route
     /*
-        adding new route
-    */
+     * adding new route
+     */
     public static function add($regexp, $route = [])
     {
-
         self::$routes[$regexp] = $route;
-
     }
 
     public static function getRoutes()
@@ -26,7 +24,7 @@ class Router{
         return self::$route;
     }
 
-    ## Маршрутизация
+    ## routing
 
     /*
         if route exists calls controller
@@ -35,8 +33,12 @@ class Router{
     public static function dispatch($url)
     {
 
-        $url = self::removeQueryString($url);
+        $url = self::removeQueryString($url); ## getting query part of url
 
+        /*
+        * if route found then creating new controller class if it exists and then
+        * if action exists calling it(default - indexAction) and getting View method
+        */
         if(self::matchRoute($url)){
 
             $controller = 'app\controllers\\' . self::$route['prefix'] . self::$route['controller'] . 'Controller';
@@ -54,28 +56,47 @@ class Router{
                     $controllerObject->getView();
 
                 }else{
+                    /**
+                     * action not found
+                     */
                     throw new \Exception("Метод $controller::$action не найден", 404);
+
                 }
             }else{
+                /**
+                 * controller not found
+                 */
                 throw new \Exception("Контроллер $controller не найден", 404);
             }
         }else{
+            /**
+             * route not found
+             */
             throw new \Exception("Страница не найдена", 404);
         }
     }
 
 
     /*
-        Searching for routes
-        true | false
+    * Searching for routes
+    * true | false
     */
     public static function matchRoute($url)
     {
 
         foreach(self::$routes as $pattern => $route){
 
+            /**
+             * loops in $routes and checks if $url matches regular expression $pattern
+             * if yes, then collects `controller/action` in the $matches array
+             */
             if(preg_match("#{$pattern}#", $url, $matches)){
 
+
+                /**
+                 * To get rid of unnesessary values loops through matches and checks if
+                 * key is string, if yes then collects it to current route value
+                 */
                 foreach($matches as $k => $v){
 
                     if(is_string($k)){
@@ -83,13 +104,19 @@ class Router{
                     }
 
                 }
-
+                /**
+                 * if no action given, sets index action
+                 */
                 if(empty($route['action'])){
 
                     $route['action'] = 'index';
 
                 }
 
+                /**
+                 * if prefix doesn exists adds empty prefix
+                 * else adds \ to the end of prefix
+                 */
                 if(!isset($route['prefix'])){
 
                     $route['prefix'] = '';
@@ -98,6 +125,7 @@ class Router{
 
                     $route['prefix'] .= '\\';
                 }
+
 
                 $route['controller'] = self::upperCamelCase($route['controller']);
 

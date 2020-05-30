@@ -11,7 +11,7 @@ class App{
         $query = trim($_SERVER['QUERY_STRING'], '/');
 
         session_start();
-
+        // echo($_SERVER['PHP_SELF'] . $_SERVER['REQUEST_URI']);
         self::$app = Registry::instance(); ## initializing registry
 
         $this->getParams(); ## getting app params

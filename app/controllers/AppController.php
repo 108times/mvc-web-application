@@ -12,4 +12,5 @@ class AppController extends Controller
         parent::__construct($route);
         new AppModel();
     }
+
 }

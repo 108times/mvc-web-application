@@ -318,3 +318,103 @@
 =================
 [2020-05-24 21:34:05] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 63
 =================
+[2020-05-25 12:27:51] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 63
+=================
+[2020-05-25 12:27:52] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 63
+=================
+[2020-05-25 12:32:08] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 63
+=================
+[2020-05-25 12:32:09] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 63
+=================
+[2020-05-25 16:03:45] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-25 16:03:47] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-25 16:50:41] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-26 19:10:29] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-26 19:10:31] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-26 19:15:39] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-26 19:15:42] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-26 19:28:15] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-26 19:28:44] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-26 19:29:30] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-27 18:55:23] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-27 18:55:24] Текст ошибки: Страница не найдена | Файл: E:\Software\OpenServer\OSPanel\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-28 20:10:01] Текст ошибки: Нет соединения с БД | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Db.php | Строка: 17
+=================
+[2020-05-28 20:10:02] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-28 20:10:44] Текст ошибки: Нет соединения с БД | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Db.php | Строка: 17
+=================
+[2020-05-28 20:10:44] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 67
+=================
+[2020-05-28 20:12:06] Текст ошибки: Нет соединения с БД | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Db.php | Строка: 17
+=================
+[2020-05-28 20:12:15] Текст ошибки: Нет соединения с БД | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Db.php | Строка: 17
+=================
+[2020-05-28 20:12:30] Текст ошибки: Нет соединения с БД | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Db.php | Строка: 17
+=================
+[2020-05-28 20:12:49] Текст ошибки: Нет соединения с БД | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Db.php | Строка: 17
+=================
+[2020-05-29 06:28:31] Текст ошибки: Контроллер app\controllers\IndexController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:41:08] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:41:29] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:47:08] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:47:16] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:47:36] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:47:37] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:47:53] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:47:59] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:48:20] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:48:32] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:49:06] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:49:15] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:49:22] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:49:32] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:49:40] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:49:57] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:50:52] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:50:58] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:51:09] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 13:56:42] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 14:00:48] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 14:02:20] Текст ошибки: Контроллер app\controllers\AmirController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 14:03:15] Текст ошибки: Контроллер app\controllers\AmirController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 64
+=================
+[2020-05-29 19:06:53] Текст ошибки: Контроллер app\controllers\AmirController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-05-29 20:52:16] Текст ошибки: Контроллер app\controllers\AmirController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================

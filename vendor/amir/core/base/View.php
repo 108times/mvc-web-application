@@ -11,7 +11,7 @@ class View
     public $model;
     public $view;
     public $layout;
- 
+
     public $data = [];
     public $meta = [];
 
@@ -20,7 +20,7 @@ class View
         $this->route = $route;
         $this->controller = $route['controller'];
         $this->view = $view;
-        $this->model = $route['controller'];    
+        $this->model = $route['controller'];
         $this->prefix = $route['prefix'];
         $this->meta = $meta;
 
@@ -34,13 +34,16 @@ class View
     public function render($data)
     {
         if (is_array($data)) {
-            extract($data);
+            extract($data); // array values to global variables
         }
+
         $viewFile = APP . "/views/{$this->prefix}{$this->controller}/{$this->view}.php";
+
         if (is_file($viewFile)){
             ob_start();
             require_once $viewFile;
             $content = ob_get_clean();
+
         } else {
             throw new \Exception("Не найден вид {$viewFile}",500);
          }
