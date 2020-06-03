@@ -33,7 +33,7 @@ class Router{
     public static function dispatch($url)
     {
 
-        $url = self::removeQueryString($url); ## getting query part of url
+        $url = self::removeQueryString($url); ## removing acttual GET params from url
 
         /*
         * if route found then creating new controller class if it exists and then
@@ -152,10 +152,23 @@ class Router{
         return lcfirst(self::upperCamelCase($name));
     }
 
+    /**
+     * removes GET params from url string
+     */
     protected static function removeQueryString($url)
     {
     if ($url) {
+        /**
+         * looks for first entry of '&' and splits url string into 2 parts,
+         * 1 containing `controller/action` part and second containing GET params
+         */
+
         $params = explode('&', $url , 2);
+
+        /**
+         * if url contains actual GET request then returning empty string,
+         * else returning new url without GET params
+         */
             if (false === strpos($params[0], '=')) {
                 return rtrim($params[0],'/');
             } else {

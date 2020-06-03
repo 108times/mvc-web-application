@@ -8,6 +8,7 @@ define("CORE", ROOT . '/vendor/amir/core');
 define("LIBS", ROOT . '/vendor/amir/core/libs');
 define("CACHE", ROOT . '/tmp/cache');
 define("CONF", ROOT . '/config');
+define("IMG", 'public/images/');
 define("LAYOUT", 'main');
 
 // http://website/public/index.php

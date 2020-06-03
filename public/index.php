@@ -5,4 +5,3 @@ require_once LIBS . '/functions.php';
 require_once CONF . '/routes.php';
 
 new \amir\App();
-

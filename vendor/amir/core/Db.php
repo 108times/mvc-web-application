@@ -16,7 +16,7 @@ class Db
         if ( !\R::testConnection() ) {
             throw new \Exception("Нет соединения с БД", 500);
         }
-        \R::freeze(true);
+        \R::freeze(true); // cancel auto creating tablesand files, if not exists
         if (DEBUG) {
             \R::debug(true, 1);
         }

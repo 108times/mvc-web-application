@@ -31,6 +31,9 @@ class View
         }
     }
 
+    /**
+     * Rendering Html code
+     */
     public function render($data)
     {
         if (is_array($data)) {
@@ -39,25 +42,40 @@ class View
 
         $viewFile = APP . "/views/{$this->prefix}{$this->controller}/{$this->view}.php";
 
+        /**
+         * if view file found
+         * collecting view to $content variable
+         * else throwing Error
+         */
         if (is_file($viewFile)){
             ob_start();
             require_once $viewFile;
             $content = ob_get_clean();
-
         } else {
             throw new \Exception("Не найден вид {$viewFile}",500);
-         }
-         if ( false !== $this -> layout) {
+        }
+
+        /**
+         * if template is set
+         * rendering it and then inside the template rendering actual view
+         * else throwing Error
+         */
+        if ( false !== $this -> layout) {
           $layoutFile = APP . "/views/layouts/{$this->layout}.php";
+          $headerFile = APP . "/views/layouts/{$this->layout}/header.php";
+          $footerFile = APP . "/views/layouts/{$this->layout}/footer.php";
           if (is_file( $layoutFile ) ) {
               require_once $layoutFile;
           } else {
               throw new \Exception("Не найден шаблон {$this->layout}", 500);
           }
-         }
+        }
 
     }
 
+    /**
+     * rendering meta data
+     */
     public function getMeta()
     {
         $meta = $this->meta;
@@ -83,7 +101,7 @@ class View
             $out .= "<meta name='keywords' content='{$keywords}'>" . PHP_EOL;
         }
         if (isset($meta['desc']) && $meta['desc'] !== '') {
-            $out .= "<meta name='description' content='{$meta['desc']}'>";
+            $out .= "<meta name='description' content='{$meta['desc']}'>" . PHP_EOL;
         }
 
         return $out;

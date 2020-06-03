@@ -418,3 +418,15 @@
 =================
 [2020-05-29 20:52:16] Текст ошибки: Контроллер app\controllers\AmirController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
 =================
+[2020-06-02 20:32:46] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sort' in 'order clause' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-03 20:00:58] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'on_general' in 'where clause' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-03 20:01:29] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sort' in 'order clause' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-03 20:02:09] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price_old' in 'where clause' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-03 20:23:33] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 772
+=================
+[2020-06-03 20:23:38] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 772
+=================
