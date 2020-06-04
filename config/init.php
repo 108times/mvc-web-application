@@ -8,8 +8,10 @@ define("CORE", ROOT . '/vendor/amir/core');
 define("LIBS", ROOT . '/vendor/amir/core/libs');
 define("CACHE", ROOT . '/tmp/cache');
 define("CONF", ROOT . '/config');
-define("IMG", 'public/images/');
 define("LAYOUT", 'main');
+
+define("IMG", 'public/images/');
+define("CATEGORY", "product/category/");
 
 // http://website/public/index.php
 $app_path = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";

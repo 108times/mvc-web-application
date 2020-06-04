@@ -430,3 +430,7 @@
 =================
 [2020-06-03 20:23:38] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 772
 =================
+[2020-06-04 14:18:20] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-04 14:18:22] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================

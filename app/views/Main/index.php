@@ -60,16 +60,18 @@
 					<?php $categories_counter = 1; 			 ?>
 					<?php foreach($categories as $category): ?>
 						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end main-category-<?=$categories_counter?>" style="background-image: url(<?=IMG.$category['img']?>);">
+							<a href="<?=CATEGORY ?><?=$category['alias']?>" class="full-size-link">
 							<div class="text px-3 py-1">
-								<h2 class="mb-0"><a href="#<?=$category['alias']?>"><?=$category['title']?></a></h2>
+								<h2 class="mb-0"><a ><?=$category['title']?></a></h2>
 							</div>
+							</a>
 						</div>
 					<?php $categories_counter++; ?>
 					<?php endforeach; ?>
 
-						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end main-category-action" style="background-image: url(<?=IMG.'category.jpg'?>);">
-							<div class="text-center w-100 h-100">
-								<h2><a href="#" class="btn btn-primary">Shop now</a></h2>
+						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end main-category-action">
+							<div class="text-center w-100 h-100 categories-action">
+								<h2><a href="<?=CATEGORY ?>" class="btn btn-primary">Shop now <span class="categories-moving-arrow moving-arrow"><i class="fa fa-angle-right"></i></span></a></h2>
 								<p>Protect the health of every home</p>
 							</div>
 						</div>
@@ -111,7 +113,7 @@
 							<div class="latest-prdouct__slider__item">
 							<?php endif; ?>
 
-								<a href="#" class="latest-product__item">
+								<a href="<?=CATEGORY . $item['alias']?>" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="<?= IMG.$item['img'] ?>" alt="">
                                     </div>
@@ -152,7 +154,7 @@
 							<div class="latest-prdouct__slider__item">
 							<?php endif; ?>
 
-								<a href="#" class="latest-product__item">
+								<a href="<?=CATEGORY . $item['alias']?>" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="<?= IMG.$item['img'] ?>" alt="">
                                     </div>
@@ -194,7 +196,7 @@
 							<div class="latest-prdouct__slider__item">
 							<?php endif; ?>
 
-								<a href="#" class="latest-product__item">
+								<a href="<?=CATEGORY . $item['alias']?>" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="<?= IMG.$item['img'] ?>" alt="">
                                     </div>
@@ -225,25 +227,34 @@
 
 	<!-- Start Daydeal Section -->
 	<?php if($daydeal): ?>
-	<section class="ftco-section img" style="background-image: url(images/bg_3.jpg);">
+	<?php $datetime = makeDate($daydeal_deal[1]['expires_on']); ?>
+	<?php foreach($daydeal_product as $item): ?>
+	<section class="ftco-section img" style="background-image: url(<?=IMG . $daydeal_deal[1]['img'] ?>);">
 		<div class="container">
 			<div class="row justify-content-end">
 				<div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
 					<span class="subheading">Best Price For You</span>
 					<h2 class="mb-4">Deal of the day</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-					<h3><a href="#">Spinach</a></h3>
-					<span class="price">$10 <a href="#">now $5 only</a></span>
+					<h3><a href="product/<?=$item['alias']?>"> <?=$item['title']?>
+					<span class="moving-arrow"><i class="fa fa-angle-right"></i></span> </a></h3>
+					<span class="price">$ <?=$item['old_price']?> <a href="#">now $<?=$item['price']?> only</a></span>
 					<div id="timer" class="d-flex mt-5">
 							<div class="time" id="days"></div>
 							<div class="time pl-3" id="hours"></div>
 							<div class="time pl-3" id="minutes"></div>
 							<div class="time pl-3" id="seconds"></div>
 					</div>
+					<p> <?=$item['content']?> </p>
          		</div>
         	</div>
     	</div>
+
+	<script>
+		const dayDealTime = "<?=$datetime?>";
+	</script>
+
     </section>
+	<?php endforeach; ?>
 	<?php endif; ?>
 	<!-- End Daydeal Section -->
 
