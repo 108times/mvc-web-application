@@ -434,3 +434,23 @@
 =================
 [2020-06-04 14:18:22] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
 =================
+[2020-06-04 15:25:29] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 772
+=================
+[2020-06-04 15:25:56] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 772
+=================
+[2020-06-04 15:26:17] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 772
+=================
+[2020-06-04 15:26:46] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-04 15:27:05] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-04 15:27:13] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND `on_general`='1' ORDER BY `sort` ASC LIMIT 5  -- keep-cache' at line 1 | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-04 15:27:20] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-04 15:27:21] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-04 15:29:54] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-04 15:50:04] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================

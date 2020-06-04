@@ -12,6 +12,8 @@ define("LAYOUT", 'main');
 
 define("IMG", 'public/images/');
 define("CATEGORY", "product/category/");
+define("PRODUCT", "product/");
+define("BLOG", "blog/");
 
 // http://website/public/index.php
 $app_path = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";

@@ -60,11 +60,10 @@
 					<?php $categories_counter = 1; 			 ?>
 					<?php foreach($categories as $category): ?>
 						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end main-category-<?=$categories_counter?>" style="background-image: url(<?=IMG.$category['img']?>);">
-							<a href="<?=CATEGORY ?><?=$category['alias']?>" class="full-size-link">
+							<a href="<?=CATEGORY ?><?=$category['alias']?>" class="full-size-link"></a>
 							<div class="text px-3 py-1">
-								<h2 class="mb-0"><a ><?=$category['title']?></a></h2>
+								<h2 class="mb-0"><a class="not-a-link"><?=$category['title']?></a></h2>
 							</div>
-							</a>
 						</div>
 					<?php $categories_counter++; ?>
 					<?php endforeach; ?>
@@ -88,9 +87,12 @@
 			<div class="container">
 				<div class="row justify-content-center mb-3 pb-3">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<span class="subheading">Featured Products</span>
-            <h2 class="mb-4">Our Products</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+			<?php if ($featured_products_info): ?>
+			<?php foreach($featured_products_info as $item): ?>
+            <h2 class="mb-4"><?=$item['title']?></h2>
+            <p><?=$item['content']?></p>
+			<?php endforeach; ?>
+			<?php endif; ?>
           </div>
         </div>
     	</div>
@@ -113,15 +115,18 @@
 							<div class="latest-prdouct__slider__item">
 							<?php endif; ?>
 
-								<a href="<?=CATEGORY . $item['alias']?>" class="latest-product__item">
+							<?php $old_price = $item['old_price']!=='0' ? "<span class='old-price'>" . $item['old_price'] . "</span>":'' ?>
+
+								<div class="latest-product__item ">
+								<a href="<?=PRODUCT ?><?=$category['alias']?>" class="full-size-link featured-full-size-link"></a>
                                     <div class="latest-product__item__pic">
                                         <img src="<?= IMG.$item['img'] ?>" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6><?= $item['title'] ?></h6>
-                                        <span><?= $item['price'] ?></span>
+                                        <span class="price_span"><?= $item['price'] ?> <?=$old_price ?> </span>
                                     </div>
-                                </a>
+                                </div>
 
 							<?php if ($section_items_counter  === 3||
 									  $latest_products_counter=== $latest_products_size): ?>
@@ -132,6 +137,12 @@
 							<?php endforeach; ?>
 
                         </div>
+						<div class="featured-products__link">
+						<a  href="<?=PRODUCT . "&new=1"?>">
+							View All
+							<span class="categories-moving-arrow moving-arrow"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</div>
                     </div>
 				<?php endif; ?>
                 </div>
@@ -154,15 +165,18 @@
 							<div class="latest-prdouct__slider__item">
 							<?php endif; ?>
 
-								<a href="<?=CATEGORY . $item['alias']?>" class="latest-product__item">
+							<?php $old_price = $item['old_price']!=='0' ? "<span class='old-price'>" . $item['old_price'] . "</span>":'' ?>
+
+								<div class="latest-product__item">
+									<a href="<?=PRODUCT ?><?=$category['alias']?>" class="full-size-link featured-full-size-link"></a>
                                     <div class="latest-product__item__pic">
                                         <img src="<?= IMG.$item['img'] ?>" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6><?= $item['title'] ?></h6>
-                                        <span><?= $item['price'] ?></span>
+                                        <span class="price_span"><?= $item['price'] ?> <?=$old_price ?> </span>
                                     </div>
-                                </a>
+                                </div>
 
 							<?php if ($section_items_counter  === 3||
 									  $sale_products_counter=== $sale_products_size): ?>
@@ -173,6 +187,12 @@
 							<?php endforeach; ?>
 
                         </div>
+						<div class="featured-products__link">
+							<a  href="<?=PRODUCT . "&sale=1"?>">
+							View All
+							<span class="categories-moving-arrow moving-arrow"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</div>
                     </div>
 				<?php endif; ?>
                 </div>
@@ -196,15 +216,18 @@
 							<div class="latest-prdouct__slider__item">
 							<?php endif; ?>
 
-								<a href="<?=CATEGORY . $item['alias']?>" class="latest-product__item">
+							<?php $old_price = $item['old_price']!=='0' ? "<span class='old-price'>" . $item['old_price'] . "</span>":'' ?>
+
+								<div class="latest-product__item">
+									<a href="<?=PRODUCT ?><?=$category['alias']?>" class="full-size-link featured-full-size-link"></a>
                                     <div class="latest-product__item__pic">
                                         <img src="<?= IMG.$item['img'] ?>" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6><?= $item['title'] ?></h6>
-                                        <span><?= $item['price'] ?></span>
+                                        <span class="price_span"><?= $item['price'] ?> <?=$old_price ?> </span>
                                     </div>
-                                </a>
+                                </div>
 
 							<?php if ($section_items_counter  === 3||
 									  $popular_products_counter=== $popular_products_size): ?>
@@ -215,6 +238,12 @@
 							<?php endforeach; ?>
 
                         </div>
+						<div class="featured-products__link">
+							<a  href="<?=PRODUCT . "&hit=1"?>">
+							View All
+							<span class="categories-moving-arrow moving-arrow"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</div>
                     </div>
 				<?php endif; ?>
                 </div>
@@ -232,7 +261,7 @@
 	<section class="ftco-section img" style="background-image: url(<?=IMG . $daydeal_deal[1]['img'] ?>);">
 		<div class="container">
 			<div class="row justify-content-end">
-				<div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
+				<div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate shadow">
 					<span class="subheading">Best Price For You</span>
 					<h2 class="mb-4">Deal of the day</h2>
 					<h3><a href="product/<?=$item['alias']?>"> <?=$item['title']?>
@@ -258,7 +287,57 @@
 	<?php endif; ?>
 	<!-- End Daydeal Section -->
 
-    <section class="ftco-section testimony-section">
+
+	 <!-- Blog Section Begin -->
+	<?php if ($blogs): ?>
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+						<?php if ($blogs_info): ?>
+						<?php foreach($blogs_info as $item): ?>
+                        <h2 class="subheading"><?=$item['title'] ?></h2>
+						<p><?=$item['content']?></p>
+						<?php endforeach; ?>
+						<?php endif; ?>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+				<?php $blogs_counter = 1; ?>
+				<?php foreach($blogs as $item): ?>
+				<?php $blogDate = reverseDate($item['posted_on']); ?>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item shadow">
+						<div class="blog__item__part-1">
+							<div class="blog__item__pic">
+                            <img src="<?=IMG . $item['img']?>" class="main__blog-img" alt="<?=$item['title']?>">
+                        	</div>
+							<ul class="blog-ul">
+                                <li><i class="fa fa-calendar-o"></i><?=$blogDate; ?></li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+						</div>
+						<div class="blog__item__part-2">
+    						<div class="blog__item__text">
+                            <h5><a href="<?=BLOG . $item['alias']?>"><?=$item['title']?></a></h5>
+                            <p><?=$item['description']?></p>
+                        </div>
+						</div>
+
+
+                    </div>
+                </div>
+
+				<?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+	<?php endif; ?>
+    <!-- Blog Section End -->
+
+    <!-- <section class="ftco-section testimony-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
@@ -368,9 +447,9 @@
     			</div>
     		</div>
     	</div>
-    </section>
+    </section> -->
 
-		<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
+	<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
       <div class="container py-4">
         <div class="row d-flex justify-content-center py-5">
           <div class="col-md-6">
