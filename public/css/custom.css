@@ -14,12 +14,16 @@
               0 8px 16px rgba(0,0,0,0.11);
     --gray:rgb(151, 151, 151);
     --text-shadow: 1px 1px 10px white;
+    --border-radius:9px;
 }
 
 #ftco-navbar {
     box-shadow : var(--shadow-shorter) !important;
 }
-
+.rounded-border {
+border-radius: var(--border-radius) !important;
+overflow: hidden;
+}
 
 /*---------------------
   Categories
@@ -189,8 +193,8 @@ justify-content: space-between;
     overflow: hidden;
     padding-top: 10px;
     position: absolute;
-width: 50%;
-right: 0;
+    width: 52%;
+    right: 0;
 }
 
 .latest-product__item__text h6 {
@@ -303,6 +307,8 @@ opacity: 1;
 .from-blog .blog__item {
 	margin-bottom: 30px;
     min-height: 520px;
+    max-height: 520px;
+    overflow: hidden;
 }
 
 .from-blog__title {
@@ -351,7 +357,13 @@ opacity: 1;
     max-width: 100%;
 }
 .blog__item {
-    padding:10px;
+    padding:15px;
+}
+.blog__item__pic{
+    position: relative;
+    top:-15px;
+    left:-15px;
+    width:calc(100% + 30px);
 }
 .from-blog .subheading {
 position: relative;
@@ -371,7 +383,7 @@ font-family: "Poppins", Arial, sans-serif;
     display: block;
 }
 .blog-ul{
-    margin-top:15px;
+
     margin-bottom: 15px;
     display: flex;
     flex-direction: row;
@@ -379,7 +391,16 @@ font-family: "Poppins", Arial, sans-serif;
     padding-right: 20px;
     padding-left: 30px;
 }
-/* .blog-ul li {
-    list-style-type: disc;
-    display: inline-block;
-} */
+.blog__item__text a:hover {
+    text-decoration: underline;
+}
+.old_price {
+    display: inline-block !important;
+    color:var(--gray) !important;
+    text-decoration: line-through !important;
+    position: relative;
+    left:3px;
+}
+.dropdown-menu{
+    top:99%;
+}

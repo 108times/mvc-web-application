@@ -360,8 +360,22 @@ setInterval(function() { makeTimer(dayDealTime); }, 1000);
 setInterval(function() { makeTimer('10 June 2020 12:00:00 GMT+06:00'); }, 1000);
 }
 
+/** My Code  */
+
+/**
+ * Currency
+ */
 
 
 
 })(jQuery);
 
+function changeCurrency (currency) {
+const activeCurrencyTag = $("#currency-dropdown");
+let activeCurrency = $("#currency-dropdown").text();
+	if (currency!==activeCurrency) {
+	console.log(currency);
+	activeCurrencyTag.text(currency);
+	}
+	window.location = "currency/change?curr=" + currency;
+}

@@ -37,7 +37,7 @@ public function get($key)
         $content = unserialize(file_get_contents($file));
         if (time() <= $content['end_time']) {
             // if cache file life time is not over then returning $content
-            return $content;
+            return $content['data'];
         }
         unlink($file);
     }  // else deleting file and returning false

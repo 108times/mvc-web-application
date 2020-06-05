@@ -59,7 +59,7 @@
 				<div class="main-categories-container">
 					<?php $categories_counter = 1; 			 ?>
 					<?php foreach($categories as $category): ?>
-						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end main-category-<?=$categories_counter?>" style="background-image: url(<?=IMG.$category['img']?>);">
+						<div class="category-wrap ftco-animate img mb-4 d-flex rounded-border align-items-end main-category-<?=$categories_counter?>" style="background-image: url(<?=IMG.$category['img']?>);">
 							<a href="<?=CATEGORY ?><?=$category['alias']?>" class="full-size-link"></a>
 							<div class="text px-3 py-1">
 								<h2 class="mb-0"><a class="not-a-link"><?=$category['title']?></a></h2>
@@ -83,6 +83,7 @@
 
 	<!-- Start Featured Products Section -->
 	<?php if ($featured_products) : ?>
+	<?php $curr = \amir\App::$app->getProperty('currency');?>
     <section class="latest-product spad">
 			<div class="container">
 				<div class="row justify-content-center mb-3 pb-3">
@@ -101,7 +102,7 @@
                 <div class="col-lg-4 col-md-6">
 					<!-- Latest Product Section Begin -->
 					<?php if ($latest_products): ?>
-                    <div class="latest-product__text">
+                    <div class="latest-product__text rounded-border">
                         <h4>New</h4>
                         <div class="latest-product__slider owl-carousel">
 
@@ -124,7 +125,7 @@
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6><?= $item['title'] ?></h6>
-                                        <span class="price_span"><?= $item['price'] ?> <?=$old_price ?> </span>
+                                        <span class="price_span"><?= $curr['symbol_left'] ."". (floatval($item['price']) * $curr['value']) . " " . $curr['symbol_right'] ?> <span class="old_price"><small><?= $curr['symbol_left'] ."". (floatval($item['old_price']) * $curr['value']) . " " . $curr['symbol_right']?></small></span> </span>
                                     </div>
                                 </div>
 
@@ -151,7 +152,7 @@
 				<!-- Sale Product Section Start -->
                 <div class="col-lg-4 col-md-6">
 					<?php if ($sale_products): ?>
-                    <div class="latest-product__text">
+                    <div class="latest-product__text rounded-border">
                         <h4>Discounts</h4>
                         <div class="latest-product__slider owl-carousel">
 
@@ -174,7 +175,7 @@
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6><?= $item['title'] ?></h6>
-                                        <span class="price_span"><?= $item['price'] ?> <?=$old_price ?> </span>
+                                        <span class="price_span"><?= $curr['symbol_left'] ."". (floatval($item['price']) * $curr['value']) . " " . $curr['symbol_right'] ?> <span class="old_price"><small><?= $curr['symbol_left'] ."". (floatval($item['old_price']) * $curr['value']) . " " . $curr['symbol_right']?></small></span> </span>
                                     </div>
                                 </div>
 
@@ -202,7 +203,7 @@
                 <div class="col-lg-4 col-md-6">
 
 					<?php if ($popular_products): ?>
-                    <div class="latest-product__text">
+                    <div class="latest-product__text rounded-border">
                         <h4>Hits</h4>
                         <div class="latest-product__slider owl-carousel">
 
@@ -225,7 +226,7 @@
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6><?= $item['title'] ?></h6>
-                                        <span class="price_span"><?= $item['price'] ?> <?=$old_price ?> </span>
+                                        <span class="price_span"><?= $curr['symbol_left'] ."". (floatval($item['price']) * $curr['value']) . " " . $curr['symbol_right'] ?> <span class="old_price"><small><?= $curr['symbol_left'] ."". (floatval($item['old_price']) * $curr['value']) . " " . $curr['symbol_right']?></small></span> </span>
                                     </div>
                                 </div>
 
@@ -261,12 +262,12 @@
 	<section class="ftco-section img" style="background-image: url(<?=IMG . $daydeal_deal[1]['img'] ?>);">
 		<div class="container">
 			<div class="row justify-content-end">
-				<div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate shadow">
+				<div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate shadow rounded-border">
 					<span class="subheading">Best Price For You</span>
 					<h2 class="mb-4">Deal of the day</h2>
 					<h3><a href="product/<?=$item['alias']?>"> <?=$item['title']?>
 					<span class="moving-arrow"><i class="fa fa-angle-right"></i></span> </a></h3>
-					<span class="price">$ <?=$item['old_price']?> <a href="#">now $<?=$item['price']?> only</a></span>
+					<span class="price">$ <?=$item['old_price']?> <a href="#">now $<?=$curr['symbol_left'] ."". (floatval($item['price']) * $curr['value']) . " " . $curr['symbol_right']?> only</a></span>
 					<div id="timer" class="d-flex mt-5">
 							<div class="time" id="days"></div>
 							<div class="time pl-3" id="hours"></div>
@@ -309,7 +310,7 @@
 				<?php foreach($blogs as $item): ?>
 				<?php $blogDate = reverseDate($item['posted_on']); ?>
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="blog__item shadow">
+                    <div class="blog__item shadow rounded-border">
 						<div class="blog__item__part-1">
 							<div class="blog__item__pic">
                             <img src="<?=IMG . $item['img']?>" class="main__blog-img" alt="<?=$item['title']?>">

@@ -92,7 +92,6 @@ class Router{
              */
             if(preg_match("#{$pattern}#", $url, $matches)){
 
-
                 /**
                  * To get rid of unnesessary values loops through matches and checks if
                  * key is string, if yes then collects it to current route value

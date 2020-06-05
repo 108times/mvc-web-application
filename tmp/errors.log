@@ -454,3 +454,45 @@
 =================
 [2020-06-04 15:50:04] Текст ошибки: Контроллер app\controllers\ProductController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
 =================
+[2020-06-04 20:39:15] Текст ошибки: Class 'app\controllers\App' not found | Файл: D:\OpenServer\domains\diplom\app\controllers\AppController.php | Строка: 15
+=================
+[2020-06-04 20:41:48] Текст ошибки: Undefined constant 'app\controllers\amir\App' | Файл: D:\OpenServer\domains\diplom\app\controllers\AppController.php | Строка: 17
+=================
+[2020-06-04 21:05:41] Текст ошибки: Cannot use object of type amir\Registry as array | Файл: D:\OpenServer\domains\diplom\app\controllers\AppController.php | Строка: 24
+=================
+[2020-06-05 14:47:14] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:47:23] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:47:58] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:48:14] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:48:23] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:49:40] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:49:55] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:50:24] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:50:47] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:51:28] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:51:29] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:51:40] Текст ошибки: Call to undefined method app\controllers\CurrencyController::getView() | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 56
+=================
+[2020-06-05 14:52:35] Текст ошибки: Не найден вид D:\OpenServer\domains\diplom/app/views/Currency/change.php | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\base\View.php | Строка: 55
+=================
+[2020-06-05 14:53:38] Текст ошибки: Не найден вид D:\OpenServer\domains\diplom/app/views/Currency/change.php | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\base\View.php | Строка: 55
+=================
+[2020-06-05 14:53:40] Текст ошибки: Не найден вид D:\OpenServer\domains\diplom/app/views/Currency/change.php | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\base\View.php | Строка: 55
+=================
+[2020-06-05 14:53:45] Текст ошибки: Не найден вид D:\OpenServer\domains\diplom/app/views/Currency/change.php | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\base\View.php | Строка: 55
+=================
+[2020-06-05 15:43:23] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-05 18:23:22] Текст ошибки: Too few arguments to function amir\Cache::set(), 1 passed in D:\OpenServer\domains\diplom\app\controllers\AppController.php on line 47 and at least 2 expected | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Cache.php | Строка: 14
+=================

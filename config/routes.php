@@ -8,10 +8,6 @@ use amir\Router;
     ^ - beginning
     $ - ending
 
-*/
-
-/*
-
 Router::add(
     1 argument - regular expression,
     2 argument - action for regular expression)

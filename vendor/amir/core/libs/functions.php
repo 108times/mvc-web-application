@@ -29,3 +29,16 @@ function reverseDate($string) {
     $result = $months[$month] . " " . $date[2] . " " . $date[0];
     return $result;
 }
+
+function redirect($http = false) {
+    /**
+     * HTTP_REFERER - previous location
+     */
+    if ($http) {
+        $redirect = $http;
+    } else {
+        $redirect = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : PATH;
+    }
+    header("Location:$redirect");
+    exit;
+}
