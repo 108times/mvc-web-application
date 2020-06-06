@@ -377,5 +377,6 @@ let activeCurrency = $("#currency-dropdown").text();
 	console.log(currency);
 	activeCurrencyTag.text(currency);
 	}
-	window.location = "currency/change?curr=" + currency;
+	window.location ="currency/change?curr=" + currency;
+
 }

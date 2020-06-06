@@ -44,7 +44,7 @@ class AppController extends Controller
         $menu = $cache->get('menu');
 
         if(!$menu) {
-            $menu = \R::getAssoc("SELECT * FROM `menu`");
+            $menu = \R::getAssoc("SELECT * FROM `menu` WHERE `status`='1' ORDER BY `id`");
             $cache->set('menu',$menu);
         }
         return $menu;

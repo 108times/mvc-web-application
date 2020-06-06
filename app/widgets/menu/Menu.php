@@ -14,7 +14,7 @@ class Menu
     protected $container = 'ul'; // menu tag
     protected $table = 'category';
     protected $cache = 3600; // cache time
-    protected $cacheKey = 'amir_menu'; //key
+    protected $cacheKey = 'w_menu'; //key
     protected $attrs = [];
     protected $prepend = '';
 
@@ -58,19 +58,19 @@ class Menu
          */
        $cache = Cache::instance();
        $this->menuHtml = $cache->get($this->cacheKey);
+       \consoleJson($this->menuHtml);
        if(!$this->menuHtml) {
-           $this->data = App::$app->getProperty("{$this->table}");
-           if (!$this->data) {
-               $this->data = \R::getAssoc("SELECT * FROM `{$this->table}`");
-           }
-       }
-        $this->tree = $this->getTree();
-        // \debug($this->table);
-        // \debug($this->tree);
-        $this->menuHtml = $this->getMenuHtml($this->tree);
+            $this->data = App::$app->getProperty("`{$this->table}`");
+            if (!$this->data) {
+                $this->data = \R::getAssoc("SELECT * FROM `{$this->table}`");
+            }
+            $this->tree = $this->getTree();
 
-        if ($this->cache) {
-            $cache->set($this->cacheKey,$this->menuHtml,$this->cache);
+            $this->menuHtml = $this->getMenuHtml($this->tree);
+
+            if ($this->cache) {
+                $cache->set($this->cacheKey,$this->menuHtml,$this->cache);
+            }
         }
         $this->output();
     }
@@ -97,6 +97,7 @@ class Menu
          */
         $tree = [];
         $data = $this->data;
+        \consoleJson($data);
         foreach($data as $id=>&$node) {
 
             if (!$node['parent_id']) {

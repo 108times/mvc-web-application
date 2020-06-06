@@ -7,7 +7,9 @@ function debug($arr){
 function console($value) {
     echo "<script> console.log('Log \$value = $value');  </script>";
 }
-
+function consoleJson ($value) {
+      \console(json_encode($value));
+}
 function alert($value) {
     echo "<script> alert('Alert \$value = $value') </script>";
 }

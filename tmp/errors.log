@@ -502,3 +502,21 @@
 =================
 [2020-06-05 21:18:33] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
 =================
+[2020-06-06 07:25:09] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SORT BY `id`' at line 1 | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-06 07:32:19] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-06 07:32:35] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-06 07:32:41] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-06 07:38:21] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-06 07:38:33] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-06 07:38:41] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-06 08:37:03] Текст ошибки: Контроллер app\controllers\ShopController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 08:37:08] Текст ошибки: Контроллер app\controllers\BlogController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
