@@ -139,17 +139,28 @@ class Router{
 
     }
 
+
+
+
     // CamelCase
     protected static function upperCamelCase($name)
     {
         return str_replace(' ', '', ucwords(str_replace('-', ' ', $name)));
     }
 
+
+
+
+
     // camelCase
     protected static function lowerCamelCase($name)
     {
         return lcfirst(self::upperCamelCase($name));
     }
+
+
+
+
 
     /**
      * removes GET params from url string

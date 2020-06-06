@@ -34,7 +34,7 @@
 			<?php foreach($features as $feature): ?>
 				<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
 				<div class="media block-6 services mb-md-0 mb-4">
-				<div class="icon bg-color-<?=$features_counter?> active d-flex justify-content-center align-items-center mb-2">
+				<div class="icon bg-color-<?=$features_counter?> active d-flex justify-content-center align-items-center mb-2 shadow">
 						<span class="<?=$feature['span_content']?>"></span>
 				</div>
 				<div class="media-body">
@@ -316,7 +316,7 @@
                             <img src="<?=IMG . $item['img']?>" class="main__blog-img" alt="<?=$item['title']?>">
                         	</div>
 							<ul class="blog-ul">
-                                <li><i class="fa fa-calendar-o"></i><?=$blogDate; ?></li>
+                                <li><i class="fa fa-calendar-o"> &nbsp; &nbsp;</i><?=$blogDate; ?></li>
                                 <li><i class="fa fa-comment-o"></i> 5</li>
                             </ul>
 						</div>

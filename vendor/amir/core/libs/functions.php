@@ -3,6 +3,10 @@
 function debug($arr){
     echo '<pre>' . print_r($arr, true) . '</pre>';
 }
+function myecho ($string) {
+    echo " " . print_r($string) . " ";
+}
+
 
 function console($value) {
     echo "<script> console.log('Log \$value = $value');  </script>";

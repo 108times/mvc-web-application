@@ -520,3 +520,39 @@
 =================
 [2020-06-06 08:37:08] Текст ошибки: Контроллер app\controllers\BlogController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
 =================
+[2020-06-06 15:47:42] Текст ошибки: Контроллер app\controllers\BuyController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 16:55:38] Текст ошибки: Контроллер app\controllers\BlogController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 17:59:21] Текст ошибки: Контроллер app\controllers\BlogController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 18:19:07] Текст ошибки: Контроллер app\controllers\ShopController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 18:30:42] Текст ошибки: syntax error, unexpected '}' | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\Menu.php | Строка: 88
+=================
+[2020-06-06 18:30:53] Текст ошибки: syntax error, unexpected '}' | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\Menu.php | Строка: 88
+=================
+[2020-06-06 18:49:43] Текст ошибки: Контроллер app\controllers\ShopController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 19:01:43] Текст ошибки: syntax error, unexpected ')', expecting ']' | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\menu_tpl\menu.php | Строка: 32
+=================
+[2020-06-06 19:01:47] Текст ошибки: syntax error, unexpected ')', expecting ']' | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\menu_tpl\menu.php | Строка: 32
+=================
+[2020-06-06 19:36:01] Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 19:51:19] Текст ошибки: Object of class app\widgets\menu\Menu could not be converted to string | Файл: D:\OpenServer\domains\diplom\app\views\Layouts\main.php | Строка: 64
+=================
+[2020-06-06 19:51:20] Текст ошибки: Object of class app\widgets\menu\Menu could not be converted to string | Файл: D:\OpenServer\domains\diplom\app\views\Layouts\main.php | Строка: 64
+=================
+[2020-06-06 19:51:34] Текст ошибки: Object of class app\widgets\menu\Menu could not be converted to string | Файл: D:\OpenServer\domains\diplom\app\views\Layouts\main.php | Строка: 64
+=================
+[2020-06-06 19:53:56] Текст ошибки: Cannot access protected property app\widgets\menu\Menu::$menu | Файл: D:\OpenServer\domains\diplom\app\views\Layouts\main.php | Строка: 69
+=================
+[2020-06-06 20:02:00] Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 20:03:20] Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 20:06:09] Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 20:28:54] Текст ошибки: Too few arguments to function app\widgets\menu\Menu::run(), 0 passed in D:\OpenServer\domains\diplom\app\widgets\menu\Menu.php on line 35 and exactly 1 expected | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\Menu.php | Строка: 52
+=================

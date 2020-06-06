@@ -54,39 +54,19 @@
 	        <span class="oi oi-menu"></span>
 	      </button>
           <div class="collapse navbar-collapse" id="ftco-nav">
-
-            <ul class="navbar-nav ml-auto">
-             <?php new \app\widgets\menu\Menu([
-                  'table'=>'menu'
+          <!-- START menu -->
+              <?php new \app\widgets\menu\Menu([
+                  'table'=>'menu',
+                  'mainMenu'=>true,
+                  'class'=>'navbar-nav main-menu',
+                  'cache'=>'0'
             ]); ?>
-
-            <?php new \app\widgets\currency\Currency();  ?>
-
-<!-- <ul class="navbar-nav ml-auto">
-    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-        <div class="dropdown-menu shadow" aria-labelledby="dropdown04">
-            <a class="dropdown-item" href="shop.html">Shop</a>
-            <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-            <a class="dropdown-item" href="product-single.html">Single Product</a>
-            <a class="dropdown-item" href="cart.html">Cart</a>
-            <a class="dropdown-item" href="checkout.html">Checkout</a>
-            </div>
-    </li>
-    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-    <?php new \app\widgets\currency\Currency();  ?>
-    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
-</ul> -->
-
-            </ul>
-
+          <!-- END menu -->
           </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
+
 
 <?= $content ?>
 
