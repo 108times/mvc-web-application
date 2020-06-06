@@ -11,7 +11,7 @@ define("CONF", ROOT . '/config');
 define("LAYOUT", 'main');
 
 define("IMG", 'public/images/');
-define("CATEGORY", "product/category/");
+define("CATEGORY", "category/");
 define("PRODUCT", "product/");
 define("BLOG", "blog/");
 

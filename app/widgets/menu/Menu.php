@@ -59,35 +59,45 @@ class Menu
        $cache = Cache::instance();
        $this->menuHtml = $cache->get($this->cacheKey);
        if(!$this->menuHtml) {
-           $this->data = App::$app->getProperty('cats');
+           $this->data = App::$app->getProperty("{$this->table}");
            if (!$this->data) {
                $this->data = \R::getAssoc("SELECT * FROM `{$this->table}`");
            }
        }
-        \debug($this->data);
         $this->tree = $this->getTree();
+        // \debug($this->table);
+        // \debug($this->tree);
+        $this->menuHtml = $this->getMenuHtml($this->tree);
 
-        \debug($this->tree);
+        if ($this->cache) {
+            $cache->set($this->cacheKey,$this->menuHtml,$this->cache);
+        }
         $this->output();
     }
+
+
+
 
     protected function output()
     {
         echo $this->menuHtml;
     }
 
+
+
+
     protected function getTree()
     {
         /**  ** 2 - forms tree
          * ** gets all categories as a tree
          * loops through $data
-         * if item has no parent, then just copying it to $tree array
+         * if item has no parent, then it is a tree matereial, just copying it to $tree array
          * else collecting it to $data children property
          * returns $tree
          */
         $tree = [];
         $data = $this->data;
-        foreach($data as $id=>$node) {
+        foreach($data as $id=>&$node) {
 
             if (!$node['parent_id']) {
                 $tree[$id] = &$node;
@@ -99,16 +109,21 @@ class Menu
         return $tree;
     }
 
+
+
     public function getMenuHtml($tree, $tab='')
     {
         $str = '';
         foreach ($tree as $id => $category) {
             $str .= $this->catToTemplate($category, $tab, $id);
         }
+        return $str;
     }
 
+
+
     protected function catToTemplate($category, $tab, $id) {
-        \ob_start();
+        \ob_start(); // включает буфер кэширования
         require $this->tpl;
         return \ob_get_clean();
     }

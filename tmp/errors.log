@@ -496,3 +496,9 @@
 =================
 [2020-06-05 18:23:22] Текст ошибки: Too few arguments to function amir\Cache::set(), 1 passed in D:\OpenServer\domains\diplom\app\controllers\AppController.php on line 47 and at least 2 expected | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Cache.php | Строка: 14
 =================
+[2020-06-05 21:16:57] Текст ошибки: Контроллер app\controllers\AboutController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-05 21:18:18] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-05 21:18:33] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================

@@ -30,7 +30,24 @@ class AppController extends Controller
         /**
          * collecting categories to the Registry
          */
-        App::$app->setProperty('cats', self::cacheCategory());
+        App::$app->setProperty('menu', self::cacheMenu());
+        App::$app->setProperty('categories', self::cacheCategory());
+    }
+
+    public static function cacheMenu() {
+        /**
+         *  If categories are cached collecting them in $cats
+         *  else selecting them from database
+         *  returns categories array
+         */
+        $cache = Cache::instance();
+        $menu = $cache->get('menu');
+
+        if(!$menu) {
+            $menu = \R::getAssoc("SELECT * FROM `menu`");
+            $cache->set('menu',$menu);
+        }
+        return $menu;
 
     }
 
