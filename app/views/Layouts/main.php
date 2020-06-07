@@ -9,19 +9,19 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="/public/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/animate.css">
-    <link rel="stylesheet" href="/public/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/public/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/public/css/magnific-popup.css">
-    <link rel="stylesheet" href="/public/css/aos.css">
-    <link rel="stylesheet" href="/public/css/ionicons.min.css">
-    <link rel="stylesheet" href="/public/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="/public/css/jquery.timepicker.css">
-    <link rel="stylesheet" href="/public/css/flaticon.css">
-    <link rel="stylesheet" href="/public/css/icomoon.css">
-    <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="/public/css/custom.css">
+    <link rel="stylesheet" href="<?=CSS?>open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="<?=CSS?>animate.css">
+    <link rel="stylesheet" href="<?=CSS?>owl.carousel.min.css">
+    <link rel="stylesheet" href="<?=CSS?>owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?=CSS?>magnific-popup.css">
+    <link rel="stylesheet" href="<?=CSS?>aos.css">
+    <link rel="stylesheet" href="<?=CSS?>ionicons.min.css">
+    <link rel="stylesheet" href="<?=CSS?>bootstrap-datepicker.css">
+    <link rel="stylesheet" href="<?=CSS?>jquery.timepicker.css">
+    <link rel="stylesheet" href="<?=CSS?>flaticon.css">
+    <link rel="stylesheet" href="<?=CSS?>icomoon.css">
+    <link rel="stylesheet" href="<?=CSS?>style.css">
+    <link rel="stylesheet" href="<?=CSS?>custom.css">
 </head>
   <body class="goto-here">
 		<div class="py-1 bg-primary">
@@ -47,7 +47,7 @@
     </div>
     <!-- START nav -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light ftco_navbar bg-light ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Vegefoods</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,12 +55,19 @@
 	      </button>
           <div class="collapse navbar-collapse" id="ftco-nav">
           <!-- START menu -->
-              <?php new \app\widgets\menu\Menu([
+          <script src="<?=JS?>menuFixer.js"></script>
+          <script> let menu = {};</script>
+          <script> let submenu = {};</script>
+          <?php new \app\widgets\menu\Menu([
                   'table'=>'menu',
                   'mainMenu'=>true,
-                  'class'=>'navbar-nav main-menu',
+                  'class'=>'navbar-nav',
+                  'mainClass'=>'main-menu',
                   'cache'=>'0'
             ]); ?>
+
+        <script>jsFix(menu);</script>
+        <script>jsFix2(submenu);</script>
           <!-- END menu -->
           </div>
 	    </div>
@@ -151,22 +158,22 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="/public/js/jquery.min.js"></script>
-  <script src="/public/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="/public/js/popper.min.js"></script>
-  <script src="/public/js/bootstrap.min.js"></script>
-  <script src="/public/js/jquery.easing.1.3.js"></script>
-  <script src="/public/js/jquery.waypoints.min.js"></script>
-  <script src="/public/js/jquery.stellar.min.js"></script>
-  <script src="/public/js/owl.carousel.min.js"></script>
-  <script src="/public/js/jquery.magnific-popup.min.js"></script>
-  <script src="/public/js/aos.js"></script>
-  <script src="/public/js/jquery.animateNumber.min.js"></script>
-  <script src="/public/js/bootstrap-datepicker.js"></script>
-  <script src="/public/js/scrollax.min.js"></script>
-  <script src="/public/https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="/public/js/google-map.js"></script>
-  <script src="/public/js/main.js"></script>
+  <script src="<?=JS?>/jquery.min.js"></script>
+  <script src="<?=JS?>/jquery-migrate-3.0.1.min.js"></script>
+  <script src="<?=JS?>/popper.min.js"></script>
+  <script src="<?=JS?>/bootstrap.min.js"></script>
+  <script src="<?=JS?>/jquery.easing.1.3.js"></script>
+  <script src="<?=JS?>/jquery.waypoints.min.js"></script>
+  <script src="<?=JS?>/jquery.stellar.min.js"></script>
+  <script src="<?=JS?>/owl.carousel.min.js"></script>
+  <script src="<?=JS?>/jquery.magnific-popup.min.js"></script>
+  <script src="<?=JS?>/aos.js"></script>
+  <script src="<?=JS?>/jquery.animateNumber.min.js"></script>
+  <script src="<?=JS?>/bootstrap-datepicker.js"></script>
+  <script src="<?=JS?>/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="<?=JS?>/google-map.js"></script>
+  <script src="<?=JS?>/main.js"></script>
 
   </body>
 </html>

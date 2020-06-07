@@ -556,3 +556,29 @@
 =================
 [2020-06-06 20:28:54] Текст ошибки: Too few arguments to function app\widgets\menu\Menu::run(), 0 passed in D:\OpenServer\domains\diplom\app\widgets\menu\Menu.php on line 35 and exactly 1 expected | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\Menu.php | Строка: 52
 =================
+[2020-06-06 20:42:53] Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================
+[2020-06-06 20:52:01] Текст ошибки: Object of class app\widgets\currency\Currency could not be converted to string | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\Menu.php | Строка: 110
+=================
+[2020-06-06 20:53:29] Текст ошибки: Object of class app\widgets\menu\Menu could not be converted to string | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\menu_tpl\menu.php | Строка: 36
+=================
+[2020-06-06 20:55:22] Текст ошибки: Object of class app\widgets\menu\Menu could not be converted to string | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\menu_tpl\menu.php | Строка: 36
+=================
+[2020-06-06 20:55:51] Текст ошибки: Cannot access protected property app\widgets\currency\Currency::$currencyHtml | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\Menu.php | Строка: 111
+=================
+[2020-06-06 20:56:39] Текст ошибки: Object of class app\widgets\menu\Menu could not be converted to string | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\menu_tpl\menu.php | Строка: 36
+=================
+[2020-06-06 21:01:25] Текст ошибки: syntax error, unexpected '=' | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\menu_tpl\menu.php | Строка: 22
+=================
+[2020-06-06 21:01:43] Текст ошибки: syntax error, unexpected '->' (T_OBJECT_OPERATOR) | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\menu_tpl\menu.php | Строка: 22
+=================
+[2020-06-06 21:02:04] Текст ошибки: syntax error, unexpected '=' | Файл: D:\OpenServer\domains\diplom\app\widgets\menu\menu_tpl\menu.php | Строка: 22
+=================
+[2020-06-06 21:25:07] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1103 Incorrect table name '' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-06 21:25:24] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1103 Incorrect table name '' | Файл: D:\OpenServer\domains\diplom\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 194
+=================
+[2020-06-07 05:05:50] Текст ошибки: Страница не найдена | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 75
+=================
+[2020-06-07 09:21:28] Текст ошибки: Контроллер app\controllers\BlogController не найден | Файл: D:\OpenServer\domains\diplom\vendor\amir\core\Router.php | Строка: 69
+=================

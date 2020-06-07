@@ -267,7 +267,7 @@
 					<h2 class="mb-4">Deal of the day</h2>
 					<h3><a href="product/<?=$item['alias']?>"> <?=$item['title']?>
 					<span class="moving-arrow"><i class="fa fa-angle-right"></i></span> </a></h3>
-					<span class="price">$ <?=$item['old_price']?> <a href="#">now $<?=$curr['symbol_left'] ."". (floatval($item['price']) * $curr['value']) . " " . $curr['symbol_right']?> only</a></span>
+					<span class="price">was <?=$curr['symbol_left'] ."". (floatval($item['old_price']) * $curr['value']) . " " . $curr['symbol_right']?> &nbsp; <a class="daydeal-link" href="<?=PRODUCT . $item['alias']?>" class="">now <?=$curr['symbol_left'] ."". (floatval($item['price']) * $curr['value']) . " " . $curr['symbol_right']?> only</a></span>
 					<div id="timer" class="d-flex mt-5">
 							<div class="time" id="days"></div>
 							<div class="time pl-3" id="hours"></div>
@@ -333,6 +333,12 @@
 
 				<?php endforeach; ?>
             </div>
+			<div class="row">
+				<div class="col-mg-12 featured-products__link">
+					<a href="<?=BLOG?>"> View more
+					<span class="categories-moving-arrow moving-arrow"><i class="fa fa-angle-right"></i></span> </a>
+				</div>
+			</div>
         </div>
     </section>
 	<?php endif; ?>

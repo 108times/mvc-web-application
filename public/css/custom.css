@@ -19,6 +19,7 @@
     --subtle-white:#F3F6FA;
     --secondary-white:#F1F1F1;
     --transition-duration: .3s;
+    --darker-white: rgb(223, 223, 223) ;
 }
 
 #ftco-navbar {
@@ -30,6 +31,10 @@ overflow: hidden;
 }
 .main-menu {
     margin-left: auto !important;
+}
+.daydeal-link{
+    text-decoration: underline solid;
+    font-size: 20px;
 }
 /*---------------------
   Categories
@@ -350,6 +355,7 @@ opacity: 1;
     text-decoration: underline;
 }
 .featured-products__link a:hover  .categories-moving-arrow {
+    transition-duration: .3s;
     left:7px;
     animation:  none;
 }
@@ -410,4 +416,48 @@ font-family: "Poppins", Arial, sans-serif;
 }
 .dropdown-menu{
     top:99%;
+}
+
+/* ===================
+    menu
+===================== */
+.nav-link,.currency-widget-item{
+color: #000000 !important;
+transition-delay: 0s;
+transition-duration: .1s;
+}
+
+.dropdown-menu {
+    padding:0 !important;
+}
+.nav-link:hover,.currency-widget-item:hover {
+    background: var(--darker-white) !important;
+
+}
+.sidemenu{
+    position: absolute !important;
+    top:-2px !important;
+    left:100%;
+}
+li.dropdown li.nav-item{
+font-size: 11px !important;
+padding: 0 !important;
+font-weight: 400;
+color: #000000;
+text-transform: uppercase;
+letter-spacing: 2px;
+opacity: 1 !important;
+}
+li.dropdown li.nav-item a {
+    padding-top: 1.5rem !important;
+padding-bottom: 1.5rem !important;
+padding-left: 20px !important;
+padding-right: 20px !important;
+}
+.currency-widget-item {
+    font-size: 11px !important;
+    padding-top: 1rem !important;
+padding-bottom: 1rem !important;
+padding-left: 20px !important;
+padding-right: 20px !important;
 }

@@ -9,10 +9,11 @@ class Currency
     protected $tpl; ## template
     protected $currencies; ## all currencies
     protected $currency; ## active currency
-
-    public function __construct()
+    protected $class;
+    public function __construct($class)
     {
         $this->tpl = __DIR__ . '/currency_tpl/currency.php';
+        $this->class = $class;
         $this->run();
     }
 

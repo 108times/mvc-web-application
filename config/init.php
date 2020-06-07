@@ -10,6 +10,8 @@ define("CACHE", ROOT . '/tmp/cache');
 define("CONF", ROOT . '/config');
 define("LAYOUT", 'main');
 
+define("CSS", "public/css/");
+define("JS", "public/js/");
 define("IMG", 'public/images/');
 define("CATEGORY", "category/");
 define("PRODUCT", "product/");

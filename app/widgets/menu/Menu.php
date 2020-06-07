@@ -10,10 +10,10 @@ class Menu
     protected $data; // categories array
     protected $tree; // data tree array
     protected $menuHtml; // finished html
-    protected $submenuHtml;
     protected $tpl; // template
     protected $container = 'ul'; // menu tag
-    protected $class = 'main-menu';
+    protected $class = '';
+    protected $mainClass = 'main-menu';
     protected $table = 'category';
     protected $cache = 3600; // cache time
     protected $cacheKey = 'w_menu'; //key
@@ -21,8 +21,9 @@ class Menu
     protected $attrs = [];
     protected $parent_index = 'parent_id';
     protected $prepend = '';
-    protected $mainMenu = false;
-    protected $subMenu = false;
+    protected $mainMenu = 0;
+    protected $subMenu = 0;
+    protected $useExtraScript = 0;
 
     public function __construct($options=[])
     {
@@ -30,9 +31,7 @@ class Menu
 
         $this->getOptions($options); // rewriting options with user options(if set)
 
-        $currentHtml = $this->mainMenu ? 'menuHtml' : 'submenuHtml';
-
-        $this->run($currentHtml);
+        $this->run();
     }
 
     protected function getOptions($options)
@@ -49,7 +48,7 @@ class Menu
         }
     }
 
-    protected function run($currentHtml)
+    protected function run()
     {
         /***
          * Runs all methods of class
@@ -68,9 +67,9 @@ class Menu
 
 
 
-       $this->$currentHtml = $cache->get($this->cacheKey);
+       $this->menuHtml = $cache->get($this->cacheKey);
 
-       if(!$this->$currentHtml) {
+       if(!$this->menuHtml) {
             $this->data = App::$app->getProperty("`{$this->table}`");
             if (!$this->data) {
                 $this->data = \R::getAssoc("SELECT * FROM `{$this->table}`");
@@ -78,20 +77,20 @@ class Menu
             $this->tree = $this->getTree();
             \consoleJson($this->tree);
 
-            $this->$currentHtml = $this->getMenuHtml($this->tree);
+            $this->menuHtml = $this->getMenuHtml($this->tree);
 
             if ($this->cache) {
-                $cache->set($this->cacheKey,$this->$currentHtml,$this->cache);
+                $cache->set($this->cacheKey,$this->menuHtml,$this->cache);
             }
         }
 
-        $this->output($currentHtml);
+      $this->output();
     }
 
 
 
 
-    protected function output($currentHtml)
+    protected function output()
     {
         ob_start();
         $attrs = '';
@@ -101,24 +100,36 @@ class Menu
         }
         }
 
-        echo "<$this->container class='$this->class' $attrs>";
+        echo "<$this->container class='$this->class $this->mainClass' $attrs>";
 
         echo $this->prepend;
 
-        echo $this->$currentHtml;
+        echo $this->menuHtml;
 
         if ($this->mainMenu) {
-        new \app\widgets\currency\Currency();
-        echo '<li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>';
+        new \app\widgets\currency\Currency($this->mainClass . "__item");
+        echo '<li class="nav-item cta cta-colored jsFixExtension ' . $this->mainClass . "__item" . '"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>';
         }
 
         echo "</$this->container>";
-       echo \ob_get_clean() ;
+
+        echo \ob_get_clean() ;
+
+        $this->jsFix($this->mainClass);
+        if ($this->useExtraScript) {
+            $this->jsFix2($this->useExtraScript);
+        }
 
     }
 
-
-
+    protected function jsFix($mainClass)
+    {
+        echo "<script> menu['$mainClass'] = '$mainClass';</script>";
+    }
+    protected function jsFix2($index)
+    {
+        echo "<script> submenu['$index'] = '$index';</script>";
+    }
 
     protected function getTree($parent_index='parent_id')
     {
@@ -140,28 +151,35 @@ class Menu
                 $data[$node['parent_id']]['children'][$id] = &$node;
             }
 
-
-
         }
         return $tree;
     }
 
 
 
-    public function getMenuHtml($tree, $tab='')
+    public function getMenuHtml($tree, $tab='',$usecustomtpl=false,$newtpl='',$customid='')
     {
+        \console('dEBUGGING tREE');
+        \consoleJson($tree);
         $str = '';
         foreach ($tree as $id => $category) {
-            $str .= $this->catToTemplate($category, $tab, $id);
+            $str .= $this->catToTemplate($category, $tab, $id, $usecustomtpl,$newtpl,$customid);
+        }
+        if ($usecustomtpl) {
+            $this->useExtraScript = $usecustomtpl;
         }
         return $str;
+
     }
 
 
 
-    protected function catToTemplate($category, $tab, $id) {
+    protected function catToTemplate($category, $tab, $id,$usecustomtpl,$newtpl,$customid) {
         \ob_start(); // включает буфер кэширования
-        require $this->tpl;
+        $tpl = $usecustomtpl ? $newtpl : $this->tpl;
+        $identifier = 'dropdown-'.$customid."__item";
+        // alert('id='.$id.', category='.$category['title'].'.newtpl =' .$newtpl.",usecustomtpl=" . $usecustomtpl . ', customid='.$customid);
+        require $tpl;
         return \ob_get_clean();
     }
 
