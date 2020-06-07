@@ -461,3 +461,9 @@ padding-bottom: 1rem !important;
 padding-left: 20px !important;
 padding-right: 20px !important;
 }
+.navbar-brand {
+    color:#000 !important;
+}
+.navbar-toggler {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
