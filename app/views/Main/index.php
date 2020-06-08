@@ -60,7 +60,7 @@
 					<?php $categories_counter = 1; 			 ?>
 					<?php foreach($categories as $category): ?>
 						<div class="category-wrap ftco-animate img mb-4 d-flex rounded-border align-items-end main-category-<?=$categories_counter?>" style="background-image: url(<?=IMG.$category['img']?>);">
-							<a href="<?=CATEGORY ?><?=$item['alias']?>" class="full-size-link"></a>
+							<a href="<?=CATEGORY ?><?=$category['alias']?>" class="full-size-link"></a>
 							<div class="text px-3 py-1">
 								<h2 class="mb-0"><a class="not-a-link"><?=$category['title']?></a></h2>
 							</div>
@@ -70,7 +70,7 @@
 
 						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end main-category-action">
 							<div class="text-center w-100 h-100 categories-action">
-								<h2><a href="<?=CATEGORY ?>" class="btn btn-primary">Shop now <span class="categories-moving-arrow moving-arrow"><i class="fa fa-angle-right"></i></span></a></h2>
+								<h2><a href="<?=SHOP?>" class="btn btn-primary">Shop now <span class="categories-moving-arrow moving-arrow"><i class="fa fa-angle-right"></i></span></a></h2>
 								<p>Protect the health of every home</p>
 							</div>
 						</div>

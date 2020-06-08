@@ -26,9 +26,10 @@ define('LIMIT',12);
 define("CSS", "/public/css/");
 define("JS", "/public/js/");
 define("IMG", '/public/images/');
-define("CATEGORY", PATH . "/category/");
-define("PRODUCT", PATH . "/product/");
-define("BLOG", "blog/");
+define("CATEGORY", "/category/");
+define("PRODUCT", "/product/");
+define("SHOP","/shop/");
+define("BLOG", "/blog/");
 define("CART","cart/");
 
 
