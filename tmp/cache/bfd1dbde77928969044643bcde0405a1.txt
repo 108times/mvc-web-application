@@ -1,0 +1,84 @@
+a:2:{s:4:"data";s:1531:"<li class="nav-item dropdown category-menu__item dropdown-__item">
+
+    <a class="nav-link dropdown-toggle"
+    href="category/fruits"
+    id='dropdown1'    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Fruits    </a>
+
+        
+         <div class="dropdown-menu sidemenu shadow dropdown-1-parent " aria-labelledby="dropdown1">
+                        
+<li class="nav-item  dropdown-1__item  category-menu__item " >
+
+    <a class="nav-link "
+    href="category/berries"
+        >
+    Berries    </a>
+
+        
+</li>
+
+<li class="nav-item  dropdown-1__item  category-menu__item " >
+
+    <a class="nav-link "
+    href="category/apples"
+        >
+    Apples    </a>
+
+        
+</li>
+
+<li class="nav-item  dropdown-1__item  category-menu__item " >
+
+    <a class="nav-link "
+    href="category/mango"
+        >
+    Mango    </a>
+
+        
+</li>
+         </div>
+        
+</li>
+
+<li class="nav-item  category-menu__item dropdown-__item">
+
+    <a class="nav-link "
+    href="category/vegetables"
+        >
+    Vegetables    </a>
+
+        
+</li>
+
+<li class="nav-item  category-menu__item dropdown-__item">
+
+    <a class="nav-link "
+    href="category/dried"
+        >
+    Dried    </a>
+
+        
+</li>
+
+<li class="nav-item  category-menu__item dropdown-__item">
+
+    <a class="nav-link "
+    href="category/juices"
+        >
+    Juices    </a>
+
+        
+</li>
+
+<li class="nav-item  category-menu__item dropdown-__item">
+
+    <a class="nav-link "
+    href="category/honey"
+        >
+    Honey    </a>
+
+        
+</li>
+
+";s:8:"end_time";i:1591583062;}

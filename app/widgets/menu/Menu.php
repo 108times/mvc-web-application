@@ -75,7 +75,6 @@ class Menu
                 $this->data = \R::getAssoc("SELECT * FROM `{$this->table}`");
             }
             $this->tree = $this->getTree();
-            \consoleJson($this->tree);
 
             $this->menuHtml = $this->getMenuHtml($this->tree);
 
@@ -159,8 +158,6 @@ class Menu
 
     public function getMenuHtml($tree, $tab='',$usecustomtpl=false,$newtpl='',$customid='')
     {
-        \console('dEBUGGING tREE');
-        \consoleJson($tree);
         $str = '';
         foreach ($tree as $id => $category) {
             $str .= $this->catToTemplate($category, $tab, $id, $usecustomtpl,$newtpl,$customid);

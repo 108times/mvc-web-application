@@ -1,11 +1,11 @@
 <?php $parent = isset($category['children']); ?>
 <?php @$own_table = $category['a_table'];?>
 <?php $dropdown = $parent || $own_table ? 1 : 0; ?>
-<?php $link = $this->tableLinks ? $this->table . '/' . $category['alias'] : '' ?>
+<?php $link = $this->tableLinks ? $this->table . '/' . $category['alias'] : PATH . "/". $category['alias'] ?>
 <li class="nav-item <?=$dropdown ? "dropdown": "" ?> <?=$this->mainClass ?>__item" >
 
     <a class="nav-link <?=$dropdown ? "dropdown-toggle": "" ?>"
-    href="<?=$dropdown ? '#' : $link ;?>"
+    href="<?=$link?>"
     <?=$dropdown ? "id='dropdown-{$category['title']}-$id' ":''?>
     <?=$dropdown ? 'data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"':'' ?>>
     <?=$category['title'];?>
@@ -28,7 +28,7 @@
                   'mainClass'=>$category['a_table'].'-menu',
                   'cacheKey'=>"{$category['a_table']}_menu",
                   'tableLinks'=>1,
-                  'cache'=>'0',
+                  'cache'=>'3600',
                   'attrs'=>[
                   'aria-labelledby'=>"dropdown-{$category['title']}-$id",
                   ]

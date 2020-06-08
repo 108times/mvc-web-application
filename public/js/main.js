@@ -332,6 +332,25 @@
 	goHere();
 
 
+
+/** My Code  */
+
+function fixLinkBehavior()
+{
+	let link = $('[data-toggle=dropdown]');
+	link.each(function(index) {
+		if (!$(this).hasClass('currency-widget-item')) {
+			$(this).click(function() {
+					window.location = $(this).attr('href');
+			})
+		}
+	});
+}
+fixLinkBehavior();
+
+
+
+
 	function makeTimer(time) {
 
 		var endTime = new Date(time);
@@ -358,22 +377,20 @@
 		$("#seconds").html(seconds + "<span>Seconds</span>");
 
 }
-if (true === dayDealTime) {
+if (typeof(dayDealTime))
+if (typeof(dayDealTime) !== 'undefined' && true === dayDealTime) {
 setInterval(function() { makeTimer(dayDealTime); }, 1000);
 } else {
 setInterval(function() { makeTimer('10 June 2020 12:00:00 GMT+06:00'); }, 1000);
 }
 
-/** My Code  */
-
-/**
- * Currency
- */
-
 
 
 })(jQuery);
 
+/**
+ * Currency
+ */
 function changeCurrency (currency) {
 const activeCurrencyTag = $("#currency-dropdown");
 let activeCurrency = $("#currency-dropdown").text();
@@ -381,6 +398,6 @@ let activeCurrency = $("#currency-dropdown").text();
 	console.log(currency);
 	activeCurrencyTag.text(currency);
 	}
-	window.location ="currency/change?curr=" + currency;
+	window.location ="http://" + window.location.hostname +"/currency/change?curr=" + currency;
 
 }

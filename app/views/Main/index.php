@@ -60,7 +60,7 @@
 					<?php $categories_counter = 1; 			 ?>
 					<?php foreach($categories as $category): ?>
 						<div class="category-wrap ftco-animate img mb-4 d-flex rounded-border align-items-end main-category-<?=$categories_counter?>" style="background-image: url(<?=IMG.$category['img']?>);">
-							<a href="<?=CATEGORY ?><?=$category['alias']?>" class="full-size-link"></a>
+							<a href="<?=CATEGORY ?><?=$item['alias']?>" class="full-size-link"></a>
 							<div class="text px-3 py-1">
 								<h2 class="mb-0"><a class="not-a-link"><?=$category['title']?></a></h2>
 							</div>
@@ -119,7 +119,7 @@
 							<?php $old_price = $item['old_price']!=='0' ? "<span class='old-price'>" . $item['old_price'] . "</span>":'' ?>
 
 								<div class="latest-product__item ">
-								<a href="<?=PRODUCT ?><?=$category['alias']?>" class="full-size-link featured-full-size-link"></a>
+								<a href="<?=PRODUCT ?><?=$item['alias']?>" class="full-size-link featured-full-size-link"></a>
                                     <div class="latest-product__item__pic">
                                         <img src="<?= IMG.$item['img'] ?>" alt="">
                                     </div>
@@ -169,7 +169,7 @@
 							<?php $old_price = $item['old_price']!=='0' ? "<span class='old-price'>" . $item['old_price'] . "</span>":'' ?>
 
 								<div class="latest-product__item">
-									<a href="<?=PRODUCT ?><?=$category['alias']?>" class="full-size-link featured-full-size-link"></a>
+									<a href="<?=PRODUCT ?><?=$item['alias']?>" class="full-size-link featured-full-size-link"></a>
                                     <div class="latest-product__item__pic">
                                         <img src="<?= IMG.$item['img'] ?>" alt="">
                                     </div>
@@ -220,7 +220,7 @@
 							<?php $old_price = $item['old_price']!=='0' ? "<span class='old-price'>" . $item['old_price'] . "</span>":'' ?>
 
 								<div class="latest-product__item">
-									<a href="<?=PRODUCT ?><?=$category['alias']?>" class="full-size-link featured-full-size-link"></a>
+									<a href="<?=PRODUCT ?><?=$item['alias']?>" class="full-size-link featured-full-size-link"></a>
                                     <div class="latest-product__item__pic">
                                         <img src="<?= IMG.$item['img'] ?>" alt="">
                                     </div>

@@ -10,13 +10,6 @@ define("CACHE", ROOT . '/tmp/cache');
 define("CONF", ROOT . '/config');
 define("LAYOUT", 'main');
 
-define("CSS", "public/css/");
-define("JS", "public/js/");
-define("IMG", 'public/images/');
-define("CATEGORY", "category/");
-define("PRODUCT", "product/");
-define("BLOG", "blog/");
-
 // http://website/public/index.php
 $app_path = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";
 
@@ -28,5 +21,16 @@ $app_path = str_replace('/public/', '', $app_path);
 
 define("PATH", $app_path);
 define("ADMIN", PATH . '/admin');
+
+define('LIMIT',12);
+define("CSS", "/public/css/");
+define("JS", "/public/js/");
+define("IMG", '/public/images/');
+define("CATEGORY", PATH . "/category/");
+define("PRODUCT", PATH . "/product/");
+define("BLOG", "blog/");
+define("CART","cart/");
+
+
 
 require_once ROOT . '/vendor/autoload.php';

@@ -21,6 +21,6 @@ class CurrencyController extends AppController
                 \setcookie('currency',$currency,time() + 3600 * 24 * 7,'/');
             }
         }
-        \redirect();
+        \redirect(PATH);
     }
 }

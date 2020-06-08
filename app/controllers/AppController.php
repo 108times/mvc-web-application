@@ -61,7 +61,7 @@ class AppController extends Controller
         $cats = $cache->get('cats');
 
         if(!$cats) {
-            $cats = \R::getAssoc("SELECT * FROM `category` WHERE `status`='1' ORDER BY `sort`");
+            $cats = \R::getAssoc("SELECT * FROM `category` ORDER BY `sort`");
             $cache->set('cats',$cats);
         }
         return $cats;

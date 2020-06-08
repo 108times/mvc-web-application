@@ -62,8 +62,6 @@ class View
          */
         if ( false !== $this -> layout) {
           $layoutFile = APP . "/views/layouts/{$this->layout}.php";
-          $headerFile = APP . "/views/layouts/{$this->layout}/header.php";
-          $footerFile = APP . "/views/layouts/{$this->layout}/footer.php";
           if (is_file( $layoutFile ) ) {
               require_once $layoutFile;
           } else {

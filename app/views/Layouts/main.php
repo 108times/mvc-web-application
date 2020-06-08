@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="<?=CSS?>custom.css">
 </head>
   <body class="goto-here">
+
 		<div class="py-1 bg-primary">
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
@@ -49,7 +50,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light ftco_navbar bg-light ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Vegefoods</a>
+	      <a class="navbar-brand" href="<?=PATH ?>">Vegefoods</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span>
 	      </button>
@@ -63,9 +64,8 @@
                   'mainMenu'=>true,
                   'class'=>'navbar-nav',
                   'mainClass'=>'main-menu',
-                  'cache'=>'0'
+                  'cache'=>'3600'
             ]); ?>
-
         <script>jsFix(menu);</script>
         <script>jsFix2(submenu);</script>
           <!-- END menu -->
@@ -158,22 +158,22 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="<?=JS?>/jquery.min.js"></script>
-  <script src="<?=JS?>/jquery-migrate-3.0.1.min.js"></script>
-  <script src="<?=JS?>/popper.min.js"></script>
-  <script src="<?=JS?>/bootstrap.min.js"></script>
-  <script src="<?=JS?>/jquery.easing.1.3.js"></script>
-  <script src="<?=JS?>/jquery.waypoints.min.js"></script>
-  <script src="<?=JS?>/jquery.stellar.min.js"></script>
-  <script src="<?=JS?>/owl.carousel.min.js"></script>
-  <script src="<?=JS?>/jquery.magnific-popup.min.js"></script>
-  <script src="<?=JS?>/aos.js"></script>
-  <script src="<?=JS?>/jquery.animateNumber.min.js"></script>
-  <script src="<?=JS?>/bootstrap-datepicker.js"></script>
-  <script src="<?=JS?>/scrollax.min.js"></script>
+  <script src="<?=JS?>jquery.min.js"></script>
+  <script src="<?=JS?>jquery-migrate-3.0.1.min.js"></script>
+  <script src="<?=JS?>popper.min.js"></script>
+  <script src="<?=JS?>bootstrap.min.js"></script>
+  <script src="<?=JS?>jquery.easing.1.3.js"></script>
+  <script src="<?=JS?>jquery.waypoints.min.js"></script>
+  <script src="<?=JS?>jquery.stellar.min.js"></script>
+  <script src="<?=JS?>owl.carousel.min.js"></script>
+  <script src="<?=JS?>jquery.magnific-popup.min.js"></script>
+  <script src="<?=JS?>aos.js"></script>
+  <script src="<?=JS?>jquery.animateNumber.min.js"></script>
+  <script src="<?=JS?>bootstrap-datepicker.js"></script>
+  <script src="<?=JS?>scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="<?=JS?>/google-map.js"></script>
-  <script src="<?=JS?>/main.js"></script>
+  <script src="<?=JS?>google-map.js"></script>
+  <script src="<?=JS?>main.js"></script>
 
   </body>
 </html>

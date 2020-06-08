@@ -1,0 +1,139 @@
+a:2:{s:4:"data";s:2602:"<li class="nav-item  main-menu__item" >
+
+    <a class="nav-link "
+    href="http://diplom/"
+        >
+    home    </a>
+
+        
+        </li>
+
+
+<li class="nav-item dropdown main-menu__item" >
+
+    <a class="nav-link dropdown-toggle"
+    href="http://diplom/shop/"
+    id='dropdown-shop-2'     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    shop    </a>
+
+        
+                <div class='dropdown-menu shadow submenu category-menu'  aria-labelledby='dropdown-shop-2' ><li class="nav-item dropdown category-menu__item dropdown-__item">
+
+    <a class="nav-link dropdown-toggle"
+    href="category/fruits"
+    id='dropdown1'    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Fruits    </a>
+
+        
+         <div class="dropdown-menu sidemenu shadow dropdown-1-parent " aria-labelledby="dropdown1">
+                        
+<li class="nav-item  dropdown-1__item  category-menu__item " >
+
+    <a class="nav-link "
+    href="category/berries"
+        >
+    Berries    </a>
+
+        
+</li>
+
+<li class="nav-item  dropdown-1__item  category-menu__item " >
+
+    <a class="nav-link "
+    href="category/apples"
+        >
+    Apples    </a>
+
+        
+</li>
+
+<li class="nav-item  dropdown-1__item  category-menu__item " >
+
+    <a class="nav-link "
+    href="category/mango"
+        >
+    Mango    </a>
+
+        
+</li>
+         </div>
+        
+</li>
+
+<li class="nav-item  category-menu__item dropdown-__item">
+
+    <a class="nav-link "
+    href="category/vegetables"
+        >
+    Vegetables    </a>
+
+        
+</li>
+
+<li class="nav-item  category-menu__item dropdown-__item">
+
+    <a class="nav-link "
+    href="category/dried"
+        >
+    Dried    </a>
+
+        
+</li>
+
+<li class="nav-item  category-menu__item dropdown-__item">
+
+    <a class="nav-link "
+    href="category/juices"
+        >
+    Juices    </a>
+
+        
+</li>
+
+<li class="nav-item  category-menu__item dropdown-__item">
+
+    <a class="nav-link "
+    href="category/honey"
+        >
+    Honey    </a>
+
+        
+</li>
+
+</div><script> menu['category-menu'] = 'category-menu';</script><script> submenu['1'] = '1';</script>        </li>
+
+
+<li class="nav-item  main-menu__item" >
+
+    <a class="nav-link "
+    href="http://diplom/about/"
+        >
+    about    </a>
+
+        
+        </li>
+
+
+<li class="nav-item  main-menu__item" >
+
+    <a class="nav-link "
+    href="http://diplom/blog/"
+        >
+    blog    </a>
+
+        
+        </li>
+
+
+<li class="nav-item  main-menu__item" >
+
+    <a class="nav-link "
+    href="http://diplom/contact/"
+        >
+    contact    </a>
+
+        
+        </li>
+
+
+";s:8:"end_time";i:1591583062;}
